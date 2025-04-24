@@ -1,0 +1,45 @@
+{
+    "admin": {
+      "url": "https://qamid.tmweb.ru/admin/index.php",
+      "loginInput": "input[name=\"login\"]",
+      "passwordInput": "input[name=\"password\"]",
+      "submitButton": "button[type=\"submit\"]"
+    },
+    "booking": {
+      "url": "https://qamid.tmweb.ru",
+      "movieItem": ".movie-list .movie-item",
+      "hallSelect": "#hall-select",
+      "sessionTime": ".session-time",
+      "seatAvailable": ".seat.available",
+      "nameInput": "input[name=\"name\"]",
+      "emailInput": "input[name=\"email\"]",
+      "submitButton": "button[type=\"submit\"]",
+      "successMessage": ".success-message"
+    },
+    "selectors": {
+    "loginInput": "#login",
+    "passwordInput": "#password",
+    "loginButton": ".login__button",
+    "errorMsg": ".msg-error",
+    "movieList": ".movie-list",
+    "movieItems": ".movie-list .movie",
+    "pageNavDay": ".page-nav__day",
+    "pageNavDayButtons": ".page-nav__day button",
+    "buyTicketButton": "button:contains('Купить билет')",
+    "movieImages": ".movie-list .movie img"
+  },
+  "testCases": [
+    {
+      "description": "успешный вход",
+      "username": "правильный_логин",
+      "password": "правильный_пароль",
+      "expectedResult": "success"
+    },
+    {
+      "description": "неправильный пароль",
+      "username": "правильный_логин",
+      "password": "неправильный_пароль",
+      "expectedResult": "fail"
+    }
+  ]
+  }

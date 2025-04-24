@@ -1,0 +1,20 @@
+[
+    {
+      "description": "Успешный вход (happy path)",
+      "username": "qamid@qamid.ru",
+      "password": "qamid",
+      "expectedResult": "success"
+    },
+    {
+      "description": "Неверный пароль (sad path)",
+      "username": "qamid@qamid.ru",
+      "password": "wrongpassword",
+      "expectedResult": "failure"
+    },
+    {
+      "description": "Неверный логин (sad path)",
+      "username": "wrong@email.com",
+      "password": "qamid",
+      "expectedResult": "failure"
+    }
+  ]
